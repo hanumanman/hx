@@ -1,0 +1,164 @@
+# Syntax highlighting
+# -------------------
+"attribute" = "yellow"
+
+"type" = "yellow"
+"type.enum.variant" = "teal"
+
+"constructor" = "sapphire"
+
+"constant" = "peach"
+"constant.character" = "teal"
+"constant.character.escape" = "pink"
+
+"string" = "green"
+"string.regexp" = "pink"
+"string.special" = "blue"
+"string.special.symbol" = "red"
+
+"comment" = { fg = "overlay2", modifiers = ["italic"] }
+
+"variable" = "text"
+"variable.parameter" = { fg = "maroon", modifiers = ["italic"] }
+"variable.builtin" = "red"
+"variable.other.member" = "blue"
+
+"label" = "sapphire" # used for lifetimes
+
+"punctuation" = "overlay2"
+"punctuation.special" = "sky"
+
+"keyword" = "mauve"
+"keyword.control.conditional" = { fg = "mauve", modifiers = ["italic"] }
+
+"operator" = "sky"
+
+"function" = "blue"
+"function.macro" = "rosewater"
+
+"tag" = "blue"
+
+"namespace" = { fg = "yellow", modifiers = ["italic"] }
+
+"special" = "blue" # fuzzy highlight
+
+"markup.heading.1" = "red"
+"markup.heading.2" = "peach"
+"markup.heading.3" = "yellow"
+"markup.heading.4" = "green"
+"markup.heading.5" = "sapphire"
+"markup.heading.6" = "lavender"
+"markup.list" = "teal"
+"markup.list.unchecked" = "overlay2"
+"markup.list.checked" = "green"
+"markup.bold" = { fg = "red", modifiers = ["bold"] }
+"markup.italic" = { fg = "red", modifiers = ["italic"] }
+"markup.link.url" = { fg = "blue", modifiers = ["italic", "underlined"] }
+"markup.link.text" = "lavender"
+"markup.link.label" = "sapphire"
+"markup.raw" = "green"
+"markup.quote" = "pink"
+
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "blue"
+
+# User Interface
+# --------------
+"ui.background" = { fg = "text", bg = "base" }
+
+"ui.linenr" = { fg = "surface1" }
+"ui.linenr.selected" = { fg = "lavender" }
+
+"ui.statusline" = { fg = "subtext1", bg = "mantle" }
+"ui.statusline.inactive" = { fg = "surface2", bg = "mantle" }
+"ui.statusline.normal" = { fg = "base", bg = "rosewater", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "base", bg = "green", modifiers = ["bold"]  }
+"ui.statusline.select" = { fg = "base", bg = "lavender", modifiers = ["bold"]  }
+
+"ui.popup" = { fg = "text", bg = "surface0" }
+"ui.window" = { fg = "crust" }
+"ui.help" = { fg = "overlay2", bg = "surface0" }
+
+"ui.bufferline" = { fg = "subtext0", bg = "mantle" }
+"ui.bufferline.active" = { fg = "mauve", bg = "base", underline = { color = "mauve", style = "line" } }
+"ui.bufferline.background" = { bg = "crust" }
+
+"ui.text" = "text"
+"ui.text.focus" = { fg = "text", bg = "surface0", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "overlay1" }
+"ui.text.directory" = { fg = "blue" }
+
+"ui.virtual" = "overlay0"
+"ui.virtual.ruler" = { bg = "surface0" }
+"ui.virtual.indent-guide" = "surface0"
+"ui.virtual.inlay-hint" = { fg = "overlay0", bg = "mantle" }
+"ui.virtual.jump-label" = { fg = "rosewater", modifiers = ["bold"] }
+
+"ui.selection" = { bg = "surface1" }
+
+"ui.cursor" = { fg = "base", bg = "secondary_cursor" }
+"ui.cursor.primary" = { fg = "base", bg = "rosewater" }
+"ui.cursor.match" = { fg = "peach", modifiers = ["bold"] }
+
+"ui.cursor.primary.normal" = { fg = "base", bg = "rosewater" }
+"ui.cursor.primary.insert" = { fg = "base", bg = "green" }
+"ui.cursor.primary.select" = { fg = "base", bg = "lavender" }
+
+"ui.cursor.normal" = { fg = "base", bg = "secondary_cursor_normal" }
+"ui.cursor.insert" = { fg = "base", bg = "secondary_cursor_insert" }
+"ui.cursor.select" = { fg = "base", bg = "secondary_cursor_select" }
+
+"ui.cursorline.primary" = { bg = "cursorline" }
+
+"ui.highlight" = { bg = "surface1", modifiers = ["bold"] }
+
+"ui.menu" = { fg = "overlay2", bg = "surface0" }
+"ui.menu.selected" = { fg = "text", bg = "surface1", modifiers = ["bold"] }
+
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "sky", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "teal", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+error = "red"
+warning = "yellow"
+info = "sky"
+hint = "teal"
+
+rainbow = ["red", "peach", "yellow", "green", "sapphire", "lavender"]
+
+[palette]
+rosewater = "#f5e0dc" # Keeping existing as no direct map
+flamingo = "#f2cdcd" # Keeping existing as no direct map
+pink = "#ad5c7c" # magenta.base
+mauve = "#ad5c7c" # magenta.base
+red = "#e85c51"
+maroon = "#c54e45" # red.dark
+peach = "#fda47f" # yellow.base
+yellow = "#fda47f"
+green = "#7aa4a1"
+teal = "#a1cdd8" # cyan.base
+sky = "#a1cdd8" # cyan.base
+sapphire = "#5a93aa" # blue.base
+blue = "#5a93aa"
+lavender = "#ad5c7c" # magenta.base
+text = "#e6eaea" # fg1
+subtext1 = "#ebebeb" # white.base
+subtext0 = "#cbd9d8" # fg2
+overlay2 = "#6d7f8b" # comment
+overlay1 = "#6d7f8b" # comment
+overlay0 = "#6d7f8b" # comment
+surface2 = "#254147" # bg3
+surface1 = "#1d3337" # bg2
+surface0 = "#152528" # bg1
+base = "#0f1c1e" # bg0
+mantle = "#0f1c1e" # bg0
+crust = "#0f1c1e" # bg0
+
+cursorline = "#254147" # bg3
+secondary_cursor = "#ebebeb" # white.base
+secondary_cursor_select = "#425e5e" # sel1
+secondary_cursor_normal = "#ebebeb" # white.base
+secondary_cursor_insert = "#7aa4a1" # green.base

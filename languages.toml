@@ -1,0 +1,78 @@
+# ~/.config/helix/languages.toml
+
+# EFM Language Server for ESLint integration
+[language-server.efm-lsp]
+command = "efm-langserver"
+args = []
+
+[language-server.efm-lsp.config]
+documentFormatting = true
+documentRangeFormatting = true
+hover = true
+lint = true
+
+[language-server.efm-lsp.config.languages]
+# ESLint for JavaScript and TypeScript files
+javascript = [
+  { formatCommand = "prettier --stdin-filepath ${INPUT}", formatStdin = true },
+  { lintCommand = "eslint --stdin --stdin-filename ${INPUT}", lintStdin = true, lintFormats = ["%f:%l:%c: %t: %m"] }
+]
+typescript = [
+  { formatCommand = "prettier --stdin-filepath ${INPUT}", formatStdin = true },
+  { lintCommand = "eslint --stdin --stdin-filename ${INPUT}", lintStdin = true, lintFormats = ["%f:%l:%c: %t: %m"] }
+]
+json = [
+  { formatCommand = "prettier --stdin-filepath ${INPUT}", formatStdin = true }
+]
+css = [
+  { formatCommand = "prettier --stdin-filepath ${INPUT}", formatStdin = true }
+]
+html = [
+  { formatCommand = "prettier --stdin-filepath ${INPUT}", formatStdin = true }
+]
+
+# TypeScript, JavaScript, TSX, JSX
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server", "efm-lsp"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server", "efm-lsp"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server", "efm-lsp"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server", "efm-lsp"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+# JSON
+[[language]]
+name = "json"
+language-servers = ["vscode-json-language-server", "efm-lsp"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "json"] }
+
+# CSS
+[[language]]
+name = "css"
+language-servers = ["vscode-css-language-server", "efm-lsp"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "css"] }
+
+# HTML (includes Emmet support via vscode-html-language-server)
+[[language]]
+name = "html"
+language-servers = ["vscode-html-language-server", "efm-lsp"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "html"] }
