@@ -1,0 +1,69 @@
+# Syntax highlighting
+"attribute" = "teal"
+"type" = "soft-blue"
+"constructor" = "soft-blue"
+"constant" = "soft-gold"
+"string" = "sage"
+"comment" = { fg = "warm-gray", modifiers = ["italic"] }
+"variable" = "off-white"
+"variable.parameter" = { fg = "off-white", modifiers = ["italic"] }
+"variable.builtin" = "teal"
+"keyword" = "teal"
+"operator" = "muted-blue"
+"function" = "soft-cyan"
+"namespace" = { fg = "teal", modifiers = ["italic"] }
+"markup.heading" = "teal"
+
+# UI
+"ui.background" = { fg = "off-white", bg = "base" }
+"ui.linenr" = { fg = "warm-gray" }
+"ui.statusline" = { fg = "off-white", bg = "mantle" }
+"ui.statusline.inactive" = { fg = "warm-gray", bg = "base" }
+"ui.bufferline" = { fg = "warm-gray", bg = "base" }
+"ui.bufferline.active" = { fg = "off-white", bg = "surface", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "base" }
+"ui.text" = { fg = "off-white" }
+"ui.text.focus" = { fg = "off-white", bg = "surface", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "warm-gray" }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection_primary" }
+"ui.cursor" = { fg = "base", bg = "teal" }
+"ui.virtual.inlay-hint" = { fg = "warm-gray", modifiers = ["dim"] }
+"ui.virtual.indent-guide" = "surface"
+"ui.virtual.jump-label" = { fg = "base", bg = "teal", modifiers = ["bold"] }
+"ui.menu" = { fg = "off-white", bg = "surface" }
+"ui.menu.selected" = { fg = "base", bg = "teal", modifiers = ["bold"] }
+"ui.menu.focus" = { fg = "base", bg = "teal", modifiers = ["bold"] }
+"ui.popup" = { fg = "off-white", bg = "surface" }
+"ui.tooltip" = { fg = "off-white", bg = "surface" }
+"ui.window" = { fg = "off-white", bg = "surface" }
+"ui.help" = { fg = "off-white", bg = "surface" }
+
+error = "muted-red"
+warning = "soft-yellow"
+info = "muted-blue"
+hint = "soft-teal"
+
+"diagnostic.error" = { fg = "muted-red", modifiers = ["bold", "underlined"] }
+"diagnostic.warning" = { fg = "soft-yellow", modifiers = ["bold", "underlined"] }
+"diagnostic.info" = { fg = "muted-blue", modifiers = ["bold"] }
+"diagnostic.hint" = { fg = "soft-teal", modifiers = ["bold"] }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+[palette]
+off-white = "#d0d0d0"
+teal = "#4a9ea0"
+soft-cyan = "#5dbfb8"
+soft-blue = "#7a9ec8"
+sage = "#7aa876"
+soft-gold = "#b8a86a"
+warm-gray = "#9a9a9a"
+muted-blue = "#6a8aae"
+base = "#18181c"
+mantle = "#1c1c21"
+surface = "#252529"
+selection = "#1a2f3a"
+selection_primary = "#2a4358"
+muted-red = "#c4666a"
+soft-yellow = "#c4a86a"
+soft-teal = "#5a9e96"

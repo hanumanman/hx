@@ -1,5 +1,5 @@
 # General
-theme = "azul"
+theme = "sage"
 
 [editor]
 # Enable relative line numbers for context
