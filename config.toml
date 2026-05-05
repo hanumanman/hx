@@ -53,7 +53,7 @@ right = ["file-encoding", "file-type", "file-line-ending", "selections", "positi
 
 # Editor integrations
 [editor.lsp]
-display-inlay-hints = true
+display-inlay-hints = false
 display-color-swatches = true
 
 [editor.indent-guides]
