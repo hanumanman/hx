@@ -3,14 +3,12 @@ command = "efm-langserver"
 
 [language-server.efm-lsp-prettier.config]
 documentFormatting = true
-
-[[language-server.efm-lsp-prettier.config.languages.typescript]]
-formatCommand = "prettier --stdin-filepath ${INPUT}"
-formatStdin = true
-
-[[language-server.efm-lsp-prettier.config.languages.typescriptreact]]
-formatCommand = "prettier --stdin-filepath ${INPUT}"
-formatStdin = true
+languages = {
+ typescript = [ { formatCommand ="prettier --stdin-filepath ${INPUT}", formatStdin = true } ] ,
+ typescriptreact = [ { formatCommand ="prettier --stdin-filepath ${INPUT}", formatStdin = true } ],
+ javascript = [ { formatCommand ="prettier --stdin-filepath ${INPUT}", formatStdin = true } ],
+ javascriptreact = [ { formatCommand ="prettier --stdin-filepath ${INPUT}", formatStdin = true } ],
+ }
 
 [language-server.vscode-eslint-language-server]
 command = "vscode-eslint-language-server"
@@ -55,6 +53,14 @@ language-servers = [
 
 [[language]]
 name = "typescript"
+language-servers = [
+  { name = "typescript-language-server", except-features = ["format"] },
+  { name = "efm-lsp-prettier", only-features = ["format"] },
+  "vscode-eslint-language-server"
+]
+
+[[language]]
+name = "javascript"
 language-servers = [
   { name = "typescript-language-server", except-features = ["format"] },
   { name = "efm-lsp-prettier", only-features = ["format"] },
