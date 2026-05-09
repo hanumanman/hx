@@ -31,6 +31,9 @@
 "ui.virtual.inlay-hint" = { fg = "warm-gray", modifiers = ["dim"] }
 "ui.virtual.indent-guide" = "surface"
 "ui.virtual.jump-label" = { fg = "base", bg = "teal", modifiers = ["bold"] }
+"diff.plus" = "sage"
+"diff.minus" = "muted-red"
+"diff.delta" = "soft-gold"
 "ui.menu" = { fg = "off-white", bg = "surface" }
 "ui.menu.selected" = { fg = "base", bg = "teal", modifiers = ["bold"] }
 "ui.menu.focus" = { fg = "base", bg = "teal", modifiers = ["bold"] }
